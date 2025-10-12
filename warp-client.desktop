@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WARP Terminal Manager
+Comment=Simple management interface for WARP Terminal
+Exec=/home/nike/mini-warp-client/launcher.sh
+Icon=/home/nike/mini-warp-client/assets/icons/warp_client.png
+Terminal=false
+Categories=Development;Utility;
+StartupNotify=true
+MimeType=application/json;text/plain;
+Keywords=warp;terminal;client;manager;configuration;
+StartupWMClass=warp-terminal-manager
