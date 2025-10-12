@@ -1,177 +1,493 @@
-# WARP Terminal Manager
+# 🚀 WARP Data Manager
 
-A simple and intuitive desktop application for managing WARP Terminal sessions and configurations.
+**Professional WARP Terminal Backup & Management Solution**
 
-## Features
+[![GitHub Stars](https://img.shields.io/github/stars/EnkiJJK/warp-data-manager?style=flat-square)](https://github.com/EnkiJJK/warp-data-manager)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey?style=flat-square)](#cross-platform-support)
 
-### Core Functionality
-- **WARP GUI/CLI Launcher**: Easy access to both WARP Terminal GUI and CLI modes
-- **Configuration Management**: Edit, validate, backup, and restore WARP configurations
-- **Session Monitoring**: Track active WARP sessions and processes
-- **Activity Logging**: Comprehensive logging of all manager activities
+> 🎯 **One-click backup, GitHub sync, automated scheduling for all your WARP Terminal data**
 
-### User Interface
-- **Modern Dark Theme**: Professional dark theme optimized for developer workflows
-- **Tabbed Interface**: Organized tabs for Dashboard, Terminal, Configuration, and Logs
-- **System Information**: Real-time system resource monitoring
-- **Desktop Integration**: Native desktop application with menu and icon support
+---
 
-### Management Features
-- Configuration backup and restore
-- JSON configuration editor with validation
-- Log viewer and export functionality
-- Process management for active sessions
-- Update checking capabilities
+## 📦 **Quick Deploy (30 Seconds)**
 
-## Installation
-
-### Quick Install
 ```bash
-cd /home/nike/mini-warp-client
-./install_desktop.sh
+# Clone and deploy in one command
+git clone https://github.com/EnkiJJK/warp-data-manager.git && cd warp-data-manager && ./deploy-fast.sh
 ```
 
-### Manual Setup
-1. Ensure Python 3.6+ is installed
-2. Install PyQt5: `pip install PyQt5`
-3. Install psutil (optional): `pip install psutil`
-4. Make scripts executable: `chmod +x launcher.sh install_desktop.sh`
-5. Run desktop integration: `./install_desktop.sh`
+**That's it!** ✨ Your WARP backups are ready to use.
 
-## Usage
+---
 
-### Launch Options
+## 🎯 **What This Does**
 
-#### Desktop Integration
-- Click the WARP Terminal Manager icon on your desktop
-- Access from Applications menu under Development category
-- Use the desktop launcher shortcut
+WARP Data Manager automatically backs up **ALL** your WARP Terminal data:
 
-#### Command Line
+- 🛡️ **WARP Rules** - Your AI assistant configurations
+- ⚙️ **MCP Servers** - Model Context Protocol setups  
+- 🗄️ **Databases** - All WARP Terminal databases
+- ⚡ **Preferences** - Your settings and configurations
+- 📝 **Logs** - Application logs and history
+- 👤 **Profiles** - User profiles and customizations
+
+**Plus** advanced features like GitHub sync, automated scheduling, and safe data reset!
+
+---
+
+## ⚡ **Two Versions Available**
+
+| Version | Features | Best For |
+|---------|----------|----------|
+| **Basic v1.1.1** | Core backup, restore, GUI/CLI | Individual users, simple backups |
+| **Enhanced v1.2.0** | + GitHub sync, automation, scheduling | Power users, teams, automated workflows |
+
+---
+
+## 🛠️ **Installation Options**
+
+### Option 1: Ultra-Fast Deploy ⚡
 ```bash
-# Launch the manager GUI
-python warp_suite_manager.py
-
-# Quick WARP Terminal access
-warp-client gui    # Launch WARP GUI mode
-warp-client cli    # Launch WARP CLI mode
+git clone https://github.com/EnkiJJK/warp-data-manager.git
+cd warp-data-manager
+./deploy-fast.sh
 ```
 
-### Interface Guide
-
-#### Dashboard Tab
-- System status overview
-- WARP Terminal status
-- Configuration status
-- Recent activity feed
-- Session counters
-
-#### Terminal Tab  
-- Information about WARP Terminal usage
-- Command reference
-- System ready status
-
-#### Configuration Tab
-- JSON configuration editor
-- Save/Load/Validate configurations
-- Backup and restore functionality
-- Syntax highlighting and validation
-
-#### Logs Tab
-- Application log viewer
-- Export logs to file
-- Clear log functionality
-- Real-time activity monitoring
-
-### Configuration Management
-
-The manager provides full configuration control:
-
-1. **Edit Configuration**: Use the built-in JSON editor with syntax validation
-2. **Backup Configuration**: Create snapshots of your current settings
-3. **Restore Configuration**: Rollback to previous configurations
-4. **Validate Configuration**: Check JSON syntax and structure
-
-### Process Management
-
-Monitor and control WARP sessions:
-- View active WARP processes
-- Terminate sessions if needed
-- Track process IDs and resource usage
-- Session activity logging
-
-## File Structure
-
-```
-mini-warp-client/
-├── warp_suite_manager.py      # Main application
-├── launcher.sh                # Desktop launcher script
-├── launch_warp.py            # WARP client launcher
-├── src/                      # Core application code
-├── config/                   # Configuration files
-├── assets/                   # Icons and resources
-└── utils/                    # Utility scripts
+### Option 2: Basic Installation 🔧
+```bash
+./install.sh
 ```
 
-## Requirements
+### Option 3: Enhanced (GitHub + Automation) 🚀
+```bash
+./install-enhanced.sh
+```
 
-### System Requirements
-- Linux (Debian/Ubuntu tested)
-- Python 3.6 or higher
-- PyQt5 for GUI functionality
-- psutil for system monitoring (optional)
+### Option 4: Manual Setup 🔨
+```bash
+pip install zstandard requests schedule
+chmod +x *.py
+```
 
-### WARP Terminal
-This manager is designed to work with WARP Terminal installations. Ensure WARP Terminal is properly configured on your system.
+---
 
-## Troubleshooting
+## 🎮 **Common Usage Examples**
 
-### Common Issues
+### **📸 Quick Backup Commands**
 
-**Manager won't start**
-- Check Python installation: `python3 --version`
-- Install PyQt5: `pip install PyQt5`
-- Check file permissions: `chmod +x launcher.sh`
+```bash
+# Take complete snapshot of everything
+./warp-manager-enhanced.py --snapshot
 
-**WARP GUI/CLI launch fails**
-- Verify WARP Terminal installation
-- Check configuration file syntax
-- Review activity logs in the manager
+# Backup only your WARP rules
+./warp-manager-enhanced.py --backup rules
 
-**Desktop integration missing**
-- Run install script: `./install_desktop.sh`
-- Update desktop database: `update-desktop-database ~/.local/share/applications`
-- Refresh desktop environment
+# Backup MCP servers and databases
+./warp-manager-enhanced.py --backup mcp database
 
-### Log Files
+# Backup everything and upload to GitHub
+./warp-manager-enhanced.py --snapshot --upload
+```
 
-Application logs are available in:
-- Activity log (in-app)
-- System logs via the Logs tab
-- Exported log files (user-specified location)
+### **📋 List & Manage Backups**
 
-## Development
+```bash
+# List all local backups
+./warp-manager-enhanced.py --list
 
-### Contributing
-1. Fork the repository
-2. Create feature branches
-3. Submit pull requests
-4. Follow existing code style
+# List backups on GitHub
+./warp-manager-enhanced.py --list-remote
 
-### Architecture
-- PyQt5-based GUI application
-- Modular configuration system
-- Process management integration
-- Desktop environment compliance
+# Upload all local backups to GitHub
+./warp-manager-enhanced.py --sync-all
+```
 
-## License
+### **🔄 Restore Operations**
 
-This project is open source. See the LICENSE file for details.
+```bash
+# Restore from a specific backup (GUI version)
+./warp-manager.py
 
-## Version History
+# CLI restore (auto-creates safety backup first)
+./warp-manager.py --restore ~/.warp-backups/backup-file.tar.zst
+```
 
-- **v1.0.0**: Initial release with core WARP Terminal management features
-  - WARP GUI/CLI launcher
-  - Configuration management
-  - Session monitoring
-  - Desktop integration
+### **⚠️ Data Management**
+
+```bash
+# Delete WARP database (creates backup first)
+./warp-manager.py --delete-db
+
+# Safe reset all WARP data (moves to quarantine)
+./warp-manager.py --reset
+```
+
+---
+
+## ☁️ **GitHub Integration Setup**
+
+### **Step 1: Get GitHub Token**
+1. Go to [GitHub Settings → Developer settings → Personal access tokens](https://github.com/settings/tokens)
+2. Click "Generate new token (classic)"
+3. Select scopes: `repo`, `read:org`
+4. Copy the token
+
+### **Step 2: Setup Integration**
+```bash
+./warp-manager-enhanced.py --setup-github
+# Enter your token and username when prompted
+```
+
+### **Step 3: Start Backing Up to GitHub**
+```bash
+# Single backup with upload
+./warp-manager-enhanced.py --backup rules --upload
+
+# Upload all existing backups
+./warp-manager-enhanced.py --sync-all
+```
+
+---
+
+## ⏰ **Automated Scheduling**
+
+### **Setup Automated Backups**
+
+```bash
+# Daily backup at 2:00 AM
+./warp-manager-enhanced.py --schedule daily --schedule-time 02:00
+
+# Weekly backup on Sundays at 3:00 AM
+./warp-manager-enhanced.py --schedule weekly --schedule-time 03:00
+```
+
+### **Run Background Service**
+
+```bash
+# Start scheduler (runs in background)
+./warp-manager-enhanced.py --start-scheduler
+
+# Or use systemd service
+systemctl --user start warp-backup-scheduler.service
+systemctl --user enable warp-backup-scheduler.service
+```
+
+### **Check Service Status**
+
+```bash
+# View scheduler status
+systemctl --user status warp-backup-scheduler.service
+
+# View logs
+journalctl --user -u warp-backup-scheduler.service -f
+```
+
+---
+
+## 🖥️ **GUI Usage**
+
+### **Launch GUI**
+
+```bash
+# Basic GUI
+./warp-manager.py
+
+# Enhanced GUI (coming soon)
+# ./warp-manager-enhanced.py --gui
+```
+
+### **GUI Features**
+- 📸 **One-click snapshot** button
+- 💾 **Save Rules** and **Save MCP** buttons  
+- 🗑️ **Delete database** with confirmation
+- ⚠️ **Reset data** with safety backup
+- 📝 **Sign up** - opens WARP registration
+- 🌐 **Proxy settings** configuration
+- 📋 **Backup browser** with restore options
+
+---
+
+## 📁 **File Locations**
+
+### **Your Data**
+```
+Linux:
+~/.config/warp-terminal/          # WARP configurations
+~/.local/state/warp-terminal/     # Databases and MCP
+~/.cache/warp-terminal/          # Cache files
+~/.warp_profiles/                # User profiles
+
+macOS:
+~/Library/Application Support/warp-terminal/
+~/Library/Caches/warp-terminal/
+
+Windows:  
+%APPDATA%/warp-terminal/
+%LOCALAPPDATA%/warp-terminal/
+```
+
+### **Backups & Config**
+```
+~/.warp-backups/                 # All your backups
+~/.warp-manager-config.json      # GitHub configuration
+```
+
+---
+
+## 🔧 **Advanced Configuration**
+
+### **Proxy Settings**
+
+```bash
+# Set proxy for GitHub operations
+export HTTP_PROXY="http://proxy:8080"
+export HTTPS_PROXY="http://proxy:8080"
+
+# Or use GUI proxy settings
+./warp-manager.py
+# Click "Proxy Settings" button
+```
+
+### **Custom Backup Location**
+
+```bash
+# Override default backup directory
+export WARP_BACKUP_DIR="/path/to/custom/backups"
+```
+
+### **Debug Mode**
+
+```bash
+# Enable debug output
+export PYTHONDEBUG=1
+./warp-manager-enhanced.py --list
+```
+
+---
+
+## 📊 **Backup Format & Security**
+
+### **Archive Format**
+- **Compression**: Zstandard (fast, high ratio)
+- **Naming**: `YYYY-MM-DDTHHMMSSZ-1.2.0-default-scope.tar.zst`
+- **Integrity**: SHA256 verification for every file
+- **Manifest**: JSON metadata with complete provenance
+
+### **Example Backup Names**
+```
+2025-10-07T143022Z-1.2.0-default-rules.tar.zst
+2025-10-07T143045Z-1.2.0-default-snapshot.tar.zst  
+2025-10-07T143100Z-1.2.0-default-mcp-database.tar.zst
+```
+
+### **Security Features**
+- 🛡️ **Pre-restore backups** - Always backup before restore
+- ⚖️ **Safe reset mode** - Quarantine instead of deletion
+- 🔍 **Integrity verification** - SHA256 checksums
+- 🔐 **GitHub private repos** - Never public
+- 🏠 **Local-first** - Works without internet
+
+---
+
+## 🌍 **Cross-Platform Support**
+
+| OS | Status | Notes |
+|----|--------|-------|
+| **Linux** | ✅ Fully Supported | Debian, Ubuntu, Kali, Fedora, Arch |
+| **macOS** | ✅ Supported | Intel & Apple Silicon |  
+| **Windows** | ✅ Supported | Windows 10/11, WSL2 recommended |
+
+### **Platform-Specific Setup**
+
+**Linux (Debian/Ubuntu):**
+```bash
+sudo apt install python3 python3-pip python3-gi gir1.2-gtk-3.0
+```
+
+**macOS:**
+```bash
+brew install python-tk pygobject3
+```
+
+**Windows:**
+```bash
+# Use WSL2 or install Python + GTK
+pip install pygobject
+```
+
+---
+
+## 🚨 **Troubleshooting**
+
+### **Common Issues**
+
+**❌ "No backups found"**
+```bash
+# Check backup directory exists
+ls -la ~/.warp-backups/
+
+# Try creating a test backup
+./warp-manager.py --backup preferences
+```
+
+**❌ "GitHub upload failed"**
+```bash
+# Verify GitHub setup
+./warp-manager-enhanced.py --list-remote
+
+# Re-setup GitHub integration
+./warp-manager-enhanced.py --setup-github
+```
+
+**❌ "GUI won't start"**
+```bash
+# Install GTK dependencies
+sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0
+
+# Use CLI instead
+./warp-manager.py --help
+```
+
+**❌ "Permission denied"**
+```bash
+# Make scripts executable
+chmod +x *.py
+
+# Check Python installation
+python3 --version
+```
+
+### **Get Help**
+
+1. **Check logs**: `~/.local/state/warp-data-manager/logs/`
+2. **GitHub Issues**: [Report a bug](https://github.com/EnkiJJK/warp-data-manager/issues)
+3. **CLI Help**: `./warp-manager-enhanced.py --help`
+
+---
+
+## 🎯 **Use Cases & Scenarios**
+
+### **👤 Individual Users**
+- Daily WARP rule backups before experiments
+- Safe system migrations with full restore
+- Protecting valuable AI configurations
+
+### **👥 Teams & Organizations**  
+- Shared WARP configurations via GitHub
+- Automated backup compliance
+- Centralized configuration management
+
+### **🔬 Researchers & Developers**
+- Version control for AI experiment setups
+- Reproducible research environments
+- Safe testing of new WARP features
+
+### **🏢 Enterprise**
+- Scheduled backup policies
+- Audit trail with GitHub integration
+- Disaster recovery planning
+
+---
+
+## 🔄 **Migration & Data Transfer**
+
+### **Move Between Machines**
+
+**Export from old machine:**
+```bash
+./warp-manager-enhanced.py --snapshot --upload
+```
+
+**Import on new machine:**
+```bash
+git clone https://github.com/EnkiJJK/warp-data-manager.git
+cd warp-data-manager
+./warp-manager-enhanced.py --setup-github
+./warp-manager-enhanced.py --list-remote
+# Download and restore specific backup via GUI
+```
+
+### **Backup Before WARP Updates**
+
+```bash
+# Always backup before updates
+./warp-manager-enhanced.py --snapshot
+# Update WARP Terminal
+# If issues occur, restore from backup
+```
+
+---
+
+## 📈 **Project Status**
+
+- ✅ **Stable Release**: v1.2.0 - Production Ready
+- 🔄 **Active Development**: Regular updates
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/EnkiJJK/warp-data-manager/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/EnkiJJK/warp-data-manager/discussions)
+
+### **Recent Updates**
+- ✨ **v1.2.0**: GitHub sync, automated scheduling
+- 🛡️ **v1.1.1**: Core backup functionality, GUI
+- 🚀 **v1.0.0**: Initial release
+
+---
+
+## 🤝 **Contributing**
+
+We welcome contributions! Here's how to help:
+
+```bash
+# Fork and clone
+git clone https://github.com/YOUR-USERNAME/warp-data-manager.git
+cd warp-data-manager
+
+# Create feature branch
+git checkout -b feature/amazing-feature
+
+# Make changes and test
+./deploy-fast.sh
+
+# Submit pull request
+```
+
+### **Areas for Contribution**
+- 🌍 Additional language support
+- 🎨 UI/UX improvements
+- 🔧 New backup formats
+- 📱 Mobile companion apps
+- 📚 Documentation improvements
+
+---
+
+## 📄 **License**
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+**Free for personal and commercial use** ✨
+
+---
+
+## 🔗 **Links**
+
+- **🌐 GitHub Repository**: https://github.com/EnkiJJK/warp-data-manager
+- **📋 Issues**: https://github.com/EnkiJJK/warp-data-manager/issues
+- **💬 Discussions**: https://github.com/EnkiJJK/warp-data-manager/discussions
+- **📦 Releases**: https://github.com/EnkiJJK/warp-data-manager/releases
+
+---
+
+## 🎉 **Quick Start Checklist**
+
+- [ ] Clone repository: `git clone https://github.com/EnkiJJK/warp-data-manager.git`
+- [ ] Run quick deploy: `./deploy-fast.sh`  
+- [ ] Create first backup: `./warp-manager-enhanced.py --snapshot`
+- [ ] Setup GitHub (optional): `./warp-manager-enhanced.py --setup-github`
+- [ ] Schedule automation (optional): `./warp-manager-enhanced.py --schedule daily`
+- [ ] Bookmark this README for reference! 📖
+
+---
+
+**⚡ Fast • 🔒 Secure • 🎯 Reliable • 🌍 Cross-Platform**
+
+*Built with ❤️ for the WARP Terminal community*
