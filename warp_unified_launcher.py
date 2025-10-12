@@ -40,7 +40,7 @@ Components:
 🔧 Unified Dashboard     - Integrated control center
 ⚡ Automated Workflows   - Backup, restore, sync operations
 
-PhD Cybersecurity Research • Copenhagen University
+Professional Development Tools
 """)
 
     def launch_client_gui(self):
