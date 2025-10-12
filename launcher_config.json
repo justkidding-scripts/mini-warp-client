@@ -1,0 +1,8 @@
+{
+  "auto_install_deps": true,
+  "desktop_integration": true,
+  "backup_before_launch": false,
+  "github_integration": false,
+  "discord_webhook": "",
+  "preferred_terminal": "auto"
+}
