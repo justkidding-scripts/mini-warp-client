@@ -35,7 +35,7 @@ The project includes:
 ```bash
 # Basic backup manager (CLI/GUI)
 ./warp-manager.py --help
-./warp-manager.py  # Launches GUI
+./warp-manager.py # Launches GUI
 
 # Enhanced manager with GitHub sync
 ./warp-manager-enhanced.py --help
@@ -87,34 +87,34 @@ python -c "import json; print(json.load(open('config/default_config.json')))"
 ### Core Components
 
 1. **WARPManagerEnhanced** (`warp-manager-enhanced.py`)
-   - GitHub integration with private repo sync
-   - Automated scheduling (daily/weekly)
-   - Enhanced backup manifests with SHA256 verification
-   - Zstandard compression for efficient storage
+ - GitHub integration with private repo sync
+ - Automated scheduling (daily/weekly)
+ - Enhanced backup manifests with SHA256 verification
+ - Zstandard compression for efficient storage
 
-2. **WARPClient** (`src/warp_client.py`) 
-   - WebSocket client for real-time WARP communication
-   - Token management with encryption support
-   - Modular plugin system
-   - Request metrics and monitoring
+2. **WARPClient** (`src/warp_client.py`)
+ - WebSocket client for real-time WARP communication
+ - Token management with encryption support
+ - Modular plugin system
+ - Request metrics and monitoring
 
 3. **WarpSuiteManager** (`warp_suite_manager.py`)
-   - PyQt5-based desktop application
-   - Tabbed interface (Dashboard, Terminal, Configuration, Logs)
-   - Process monitoring and management
-   - Real-time configuration editing
+ - PyQt5-based desktop application
+ - Tabbed interface (Dashboard, Terminal, Configuration, Logs)
+ - Process monitoring and management
+ - Real-time configuration editing
 
 4. **Configuration Manager** (`src/config_manager.py`)
-   - Centralized configuration handling
-   - Environment-specific settings
-   - Secure credential storage
+ - Centralized configuration handling
+ - Environment-specific settings
+ - Secure credential storage
 
 ### Data Flow Architecture
 
 ```
 WARP Terminal Data → Backup Manager → Compression (Zstandard) → Local Storage → GitHub Sync
-     ↓                    ↓                     ↓                    ↓              ↓
-  Rules/MCP/DB      File Collection     Archive Creation      ~/.warp-backups   Private Repo
+ ↓ ↓ ↓ ↓ ↓
+ Rules/MCP/DB File Collection Archive Creation ~/.warp-backups Private Repo
 ```
 
 ### File Locations by OS
@@ -186,7 +186,7 @@ YYYY-MM-DDTHHMMSSZ-{version}-{profile}-{scope}.tar.zst
 - Integrity verification on restore
 - Automated backup testing
 
-### Performance Monitoring  
+### Performance Monitoring
 - Request metrics (success rate, response times)
 - Bandwidth usage tracking
 - Process monitoring for active sessions

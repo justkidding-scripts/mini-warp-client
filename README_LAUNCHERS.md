@@ -2,7 +2,7 @@
 
 This document describes the comprehensive launcher system for WARP Terminal that provides seamless cross-platform support for Windows, Linux, and macOS.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Windows Users
 ```batch
@@ -31,7 +31,7 @@ python3 warp_launcher.py
 python3 warp_launcher.py setup
 ```
 
-## 📁 Launcher Files Overview
+## Launcher Files Overview
 
 | Launcher File | Platform | Description |
 |---------------|----------|-------------|
@@ -40,7 +40,7 @@ python3 warp_launcher.py setup
 | `warp_launcher.ps1` | All | PowerShell script for Windows/Linux/macOS |
 | `warp_launcher.sh` | Linux/macOS | Bash script with colored output |
 
-## 🎯 Available Commands
+## Available Commands
 
 All launchers support the same commands:
 
@@ -55,11 +55,11 @@ All launchers support the same commands:
 | `install` | Install dependencies only |
 | `help` | Show help information |
 
-## 🖥️ Platform-Specific Features
+## ️ Platform-Specific Features
 
 ### Windows Features
 - **Registry Integration**: Creates Windows registry entries for file associations
-- **Batch Launcher**: Native Windows .bat file for Command Prompt users  
+- **Batch Launcher**: Native Windows .bat file for Command Prompt users
 - **PowerShell Support**: Full PowerShell integration with parameter validation
 - **Auto-Detection**: Automatically finds Python installation (python, py, python3)
 
@@ -74,7 +74,7 @@ All launchers support the same commands:
 - **Homebrew Integration**: Detects and uses Homebrew when available
 - **Cocoa Framework**: Installs macOS-specific Python packages
 
-## 🔧 Setup and Installation
+## Setup and Installation
 
 ### Automatic Setup
 ```bash
@@ -82,17 +82,17 @@ All launchers support the same commands:
 python3 warp_launcher.py setup
 
 # Or use platform-specific launcher
-./warp_launcher.sh setup      # Linux/macOS
-warp_launcher.bat setup       # Windows
-.\warp_launcher.ps1 setup     # PowerShell
+./warp_launcher.sh setup # Linux/macOS
+warp_launcher.bat setup # Windows
+.\warp_launcher.ps1 setup # PowerShell
 ```
 
 The setup process will:
-1. ✅ Detect your platform and Python installation
-2. 📦 Install required dependencies (PyQt5, zstandard, etc.)
-3. 🖥️ Set up desktop integration
-4. 💾 Create backup directories
-5. ⚙️ Configure system preferences
+1. Detect your platform and Python installation
+2. Install required dependencies (PyQt5, zstandard, etc.)
+3. ️ Set up desktop integration
+4. Create backup directories
+5. ️ Configure system preferences
 
 ### Manual Installation
 
@@ -106,14 +106,14 @@ pip install PyQt5 zstandard requests psutil cryptography
 # Windows:
 pip install pywin32 wmi
 
-# macOS:  
+# macOS:
 pip install pyobjc-framework-Cocoa
 
 # Linux: (system packages)
 sudo apt install python3-pyqt5 git
 ```
 
-## ⚙️ Configuration
+## ️ Configuration
 
 ### Interactive Configuration
 ```bash
@@ -122,7 +122,7 @@ python3 warp_launcher.py config
 
 Configuration options:
 - **Auto-install dependencies**: Automatically install missing packages
-- **Desktop integration**: Create menu entries and file associations  
+- **Desktop integration**: Create menu entries and file associations
 - **Backup before launch**: Create backup before starting GUI
 - **Discord webhook**: Set webhook URL for notifications
 - **Preferred terminal**: Set default terminal application
@@ -131,16 +131,16 @@ Configuration options:
 Settings are stored in `launcher_config.json`:
 ```json
 {
-  "auto_install_deps": true,
-  "desktop_integration": true,
-  "backup_before_launch": false,
-  "github_integration": false,
-  "discord_webhook": "",
-  "preferred_terminal": "auto"
+ "auto_install_deps": true,
+ "desktop_integration": true,
+ "backup_before_launch": false,
+ "github_integration": false,
+ "discord_webhook": "",
+ "preferred_terminal": "auto"
 }
 ```
 
-## 📊 System Status Dashboard
+## System Status Dashboard
 
 View comprehensive system information:
 ```bash
@@ -148,14 +148,14 @@ python3 warp_launcher.py status
 ```
 
 The status dashboard shows:
-- 🖥️ Platform and architecture
-- 🐍 Python version and location  
-- 🖼️ GUI environment availability
-- 📦 Package manager detected
-- 📋 Component status (GUI, CLI, backup system)
-- 🔍 Dependency check results
+- ️ Platform and architecture
+- Python version and location
+- ️ GUI environment availability
+- Package manager detected
+- Component status (GUI, CLI, backup system)
+- Dependency check results
 
-## 💾 Backup System Integration
+## Backup System Integration
 
 All launchers integrate with the WARP backup system:
 
@@ -168,7 +168,7 @@ python3 warp_launcher.py config
 # Then enable "backup_before_launch"
 ```
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -196,7 +196,7 @@ export WARP_DEBUG=1
 python3 warp_launcher.py gui
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Custom Icons
 Place custom icons in the `assets/` directory:
@@ -209,26 +209,26 @@ Extend the launcher by modifying the `available_commands` dictionary in `warp_la
 ### Platform-Specific Customization
 Each launcher detects the platform and adapts behavior:
 - Windows: Uses Windows-specific paths and registry
-- Linux: Respects XDG directories and desktop standards  
+- Linux: Respects XDG directories and desktop standards
 - macOS: Creates proper .app bundles and uses macOS conventions
 
-## 🔗 Integration with WARP Ecosystem
+## Integration with WARP Ecosystem
 
 The launchers seamlessly integrate with:
 - **Mini WARP Client**: Primary GUI/CLI application
-- **WARP Data Manager**: Backup and restore functionality  
+- **WARP Data Manager**: Backup and restore functionality
 - **GitHub Integration**: Automatic repository sync
 - **Discord Notifications**: Status updates via webhook
 - **Desktop Environment**: Native platform integration
 
-## 📚 Advanced Usage
+## Advanced Usage
 
 ### Batch Operations
 ```bash
 # Setup multiple machines
 for host in server1 server2 server3; do
-  scp warp_launcher.py $host:/tmp/
-  ssh $host "cd /tmp && python3 warp_launcher.py setup"
+ scp warp_launcher.py $hosttmp/
+ ssh $host "cd /tmp && python3 warp_launcher.py setup"
 done
 ```
 
@@ -244,19 +244,19 @@ python3 warp_launcher.py backup --schedule daily --time 03:00
 ```yaml
 # .github/workflows/deploy.yml
 - name: Deploy WARP Terminal
-  run: |
-    python3 warp_launcher.py setup --ci-mode
-    python3 warp_launcher.py status --json > warp_status.json
+ run: |
+ python3 warp_launcher.py setup --ci-mode
+ python3 warp_launcher.py status --json > warp_status.json
 ```
 
-## 🎉 What's Next?
+## What's Next?
 
 The universal launcher system provides:
-✅ **Cross-platform compatibility** - Works on Windows, Linux, macOS
-✅ **Automatic detection** - Finds Python, GUI, dependencies automatically  
-✅ **Desktop integration** - Native platform integration
-✅ **Backup integration** - Seamless backup and restore
-✅ **Configuration management** - Easy setup and customization
-✅ **Status monitoring** - Comprehensive system health checks
+ **Cross-platform compatibility** - Works on Windows, Linux, macOS
+ **Automatic detection** - Finds Python, GUI, dependencies automatically
+ **Desktop integration** - Native platform integration
+ **Backup integration** - Seamless backup and restore
+ **Configuration management** - Easy setup and customization
+ **Status monitoring** - Comprehensive system health checks
 
-Your WARP Terminal is now ready for professional deployment across any platform! 🚀
+Your WARP Terminal is now ready for professional deployment across any platform!
