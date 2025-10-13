@@ -152,7 +152,33 @@ chmod +x *.py
 
 ## ⏰ **Automated Scheduling**
 
-### **Setup Automated Backups**
+### **NEW: Persistent Monitor (Always-On Backup)** 🚀
+
+The **WARP Persistent Monitor** automatically detects when WARP terminals are running and backs up your data every 30 minutes to GitHub.
+
+```bash
+# Install the persistent monitor
+./install_persistent_monitor.sh
+
+# Start persistent monitoring
+python3 warp_persistent_monitor.py start
+
+# Check status
+python3 warp_persistent_monitor.py status
+
+# Stop monitoring
+python3 warp_persistent_monitor.py stop
+```
+
+**Features:**
+- 🔍 **Auto-Detection**: Automatically detects when WARP terminals are running
+- ⏰ **30-Minute Intervals**: Backs up every 30 minutes while WARP is active
+- ☁️ **GitHub Sync**: Automatically uploads to your GitHub repository
+- 🛡️ **Failure Recovery**: Handles backup failures gracefully
+- 🎯 **Zero Configuration**: Works out of the box with existing setup
+- 📊 **Full Monitoring**: Tracks backup status and timing
+
+### **Traditional Scheduled Backups**
 
 ```bash
 # Daily backup at 2:00 AM
@@ -168,7 +194,11 @@ chmod +x *.py
 # Start scheduler (runs in background)
 ./warp-manager-enhanced.py --start-scheduler
 
-# Or use systemd service
+# Or use systemd service for persistent monitor
+systemctl --user start warp-monitor
+systemctl --user enable warp-monitor  # Auto-start at login
+
+# Traditional scheduler service
 systemctl --user start warp-backup-scheduler.service
 systemctl --user enable warp-backup-scheduler.service
 ```
@@ -176,11 +206,15 @@ systemctl --user enable warp-backup-scheduler.service
 ### **Check Service Status**
 
 ```bash
-# View scheduler status
+# View persistent monitor status
+systemctl --user status warp-monitor
+
+# View traditional scheduler status
 systemctl --user status warp-backup-scheduler.service
 
 # View logs
-journalctl --user -u warp-backup-scheduler.service -f
+tail -f ~/.warp-monitor.log  # Persistent monitor logs
+journalctl --user -u warp-backup-scheduler.service -f  # Scheduler logs
 ```
 
 ---

@@ -1,0 +1,21 @@
+[Unit]
+Description=WARP Terminal Persistent Monitor
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/usr/bin/python3 %h/Desktop/mini-warp-client/warp_persistent_monitor.py start --foreground
+ExecStop=/usr/bin/python3 %h/Desktop/mini-warp-client/warp_persistent_monitor.py stop
+Restart=always
+RestartSec=10
+Environment=DISPLAY=:0
+Environment=HOME=%h
+
+# Ensure service starts only when user session is active
+KillMode=mixed
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target
