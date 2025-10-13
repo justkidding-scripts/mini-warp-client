@@ -1,32 +1,32 @@
-# 🚀 WARP Terminal Unified Ecosystem
+# WARP Terminal Unified Ecosystem
 
 **Complete WARP Terminal Management Solution**
 
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-blue)](#)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-green)](#)
-[![GUI](https://img.shields.io/badge/GUI-PyQt5-orange)](#)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](#)
+[![Platform](https/img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Windows-blue)](#)
+[![Python](https/img.shields.io/badge/Python-3.8%2B-green)](#)
+[![GUI](https/img.shields.io/badge/GUI-PyQt5-orange)](#)
+[![License](https/img.shields.io/badge/License-MIT-yellow)](#)
 
-> 🎯 A comprehensive WARP Terminal ecosystem combining advanced client functionality with professional backup & data management. Perfect for PhD cybersecurity research, terminal power users, and development teams.
+> A comprehensive WARP Terminal ecosystem combining advanced client functionality with professional backup & data management. Perfect for cybersecurity research, terminal power users, and development teams.
 
 ---
 
-## 🌟 What's New: Unified Ecosystem
+## What's New: Unified Ecosystem
 
 **Two Powerful Tools, One Solution:**
 
-📱 **Mini WARP Client** - Advanced terminal client with GUI/CLI modes  
-💾 **WARP Data Manager** - Professional backup & management with GitHub sync  
-🔧 **Unified Launcher** - Integrated control center for complete workflow  
-⚡ **Automated Workflows** - Backup-before-launch, scheduled backups, restore operations
+ **Mini WARP Client** - Advanced terminal client with GUI/CLI modes
+ **WARP Data Manager** - Professional backup & management with GitHub sync
+ **Unified Launcher** - Integrated control center for complete workflow
+ **Automated Workflows** - Backup-before-launch, scheduled backups, restore operations
 
 ---
 
-## 🚀 Ultra-Quick Start (30 Seconds)
+## Ultra-Quick Start (30 Seconds)
 
 ```bash
 # Clone the unified ecosystem
-git clone https://github.com/FoundationAgents/mini-warp-client.git
+git clone https/github.com/FoundationAgents/mini-warp-client.git
 cd mini-warp-client
 
 # Setup everything in one command
@@ -36,11 +36,11 @@ python warp_unified_launcher.py setup
 python warp_unified_launcher.py dashboard
 ```
 
-**That's it!** ✨ Your complete WARP ecosystem is ready.
+**That's it!** Your complete WARP ecosystem is ready.
 
 ---
 
-## 🎯 Available Launch Modes
+## Available Launch Modes
 
 | Mode | Description | Use Case |
 |------|-------------|----------|
@@ -55,9 +55,9 @@ python warp_unified_launcher.py dashboard
 
 ---
 
-## 📱 Mini WARP Client Features
+## Mini WARP Client Features
 
-### 🔧 Core Functionality
+### Core Functionality
 - **GUI & CLI Modes** - Professional PyQt5 interface or command-line
 - **WebSocket Integration** - Real-time WARP Terminal communication
 - **Token Management** - Encrypted authentication handling
@@ -65,14 +65,14 @@ python warp_unified_launcher.py dashboard
 - **Configuration Manager** - Advanced settings with encryption
 - **Event System** - Robust callback handling with shutdown protection
 
-### 🛡️ Security & Research Features
+### ️ Security & Research Features
 - **Command Execution** - Secure subprocess handling
 - **File Operations** - Upload/download with integrity verification
 - **AI Agent Integration** - Chat interface for WARP AI
 - **Session Management** - Multiple connection handling
 - **Audit Logging** - Complete activity tracking
 
-### 🖥️ Desktop Integration
+### ️ Desktop Integration
 - **System Menu** - Native desktop launcher
 - **Desktop Icons** - Click-to-launch functionality
 - **Process Monitoring** - Live session management
@@ -80,22 +80,22 @@ python warp_unified_launcher.py dashboard
 
 ---
 
-## 💾 WARP Data Manager Features
+## WARP Data Manager Features
 
-### 📦 Backup Operations
+### Backup Operations
 - **Complete Snapshots** - All WARP data in one backup
 - **Component Selection** - Rules, MCP, databases, preferences
 - **Automated Scheduling** - Daily/weekly backup automation
 - **GitHub Integration** - Cloud sync and version control
 - **Integrity Verification** - SHA256 checksums for all data
 
-### 🔄 Restore & Recovery
+### Restore & Recovery
 - **GUI Restore** - Visual backup browser and recovery
 - **Safety Backups** - Auto-backup before any restore
 - **Selective Restore** - Choose specific components
 - **Quarantine Mode** - Safe data reset without deletion
 
-### ☁️ Cloud & Automation
+### ️ Cloud & Automation
 - **GitHub Sync** - Private repository backup storage
 - **Automated Workflows** - Background scheduling service
 - **Cross-Platform** - Linux, macOS, Windows support
@@ -103,7 +103,7 @@ python warp_unified_launcher.py dashboard
 
 ---
 
-## 🎮 Quick Usage Examples
+## Quick Usage Examples
 
 ### Launch Modes
 ```bash
@@ -149,70 +149,70 @@ echo "status" | python launch_warp.py cli
 
 ---
 
-## 🔧 Installation Options
+## Installation Options
 
 ### Option 1: Complete Ecosystem (Recommended)
 ```bash
-git clone https://github.com/FoundationAgents/mini-warp-client.git
+git clone https/github.com/FoundationAgents/mini-warp-client.git
 cd mini-warp-client
 python warp_unified_launcher.py setup
 ```
 
 ### Option 2: Client Only
 ```bash
-python warp_suite_manager.py  # GUI mode
-python launch_warp.py cli      # CLI mode
+python warp_suite_manager.py # GUI mode
+python launch_warp.py cli # CLI mode
 ```
 
 ### Option 3: Data Manager Only
 ```bash
-./deploy-fast.sh               # Quick setup
-./warp-manager.py              # GUI mode
-./warp-manager-enhanced.py     # Enhanced CLI
+./deploy-fast.sh # Quick setup
+./warp-manager.py # GUI mode
+./warp-manager-enhanced.py # Enhanced CLI
 ```
 
 ### Option 4: Desktop Integration
 ```bash
-./install_desktop.sh           # Install desktop launcher
+./install_desktop.sh # Install desktop launcher
 ```
 
 ---
 
-## 📊 System Architecture
+## System Architecture
 
 ```
-🚀 WARP Terminal Unified Ecosystem
-├── 📱 Mini WARP Client
-│   ├── 🖥️ GUI Manager (PyQt5)
-│   ├── 💻 CLI Interface
-│   ├── 🔌 WebSocket Client
-│   ├── 🔐 Token Manager
-│   └── 📚 Module System
-├── 💾 WARP Data Manager
-│   ├── 📦 Backup Engine
-│   ├── ☁️ GitHub Integration
-│   ├── ⏰ Scheduler Service
-│   └── 🔄 Restore System
-├── 🔧 Unified Launcher
-│   ├── 📊 Dashboard
-│   ├── 🎛️ Mode Router
-│   └── ⚡ Workflow Manager
-└── 🖥️ Desktop Integration
-    ├── 🎯 System Menu
-    └── 🖱️ Click Launchers
+ WARP Terminal Unified Ecosystem
+├── Mini WARP Client
+│ ├── ️ GUI Manager (PyQt5)
+│ ├── CLI Interface
+│ ├── WebSocket Client
+│ ├── Token Manager
+│ └── Module System
+├── WARP Data Manager
+│ ├── Backup Engine
+│ ├── ️ GitHub Integration
+│ ├── ⏰ Scheduler Service
+│ └── Restore System
+├── Unified Launcher
+│ ├── Dashboard
+│ ├── ️ Mode Router
+│ └── Workflow Manager
+└── ️ Desktop Integration
+ ├── System Menu
+ └── ️ Click Launchers
 ```
 
 ---
 
-## 🎓 Academic Research Context
+## Academic Research Context
 
-**Perfect for PhD Cybersecurity Research:**
+**Perfect for Cybersecurity Research:**
 
-- ✅ **Professional Codebase** - Academic-quality code demonstrating advanced Python skills
-- ✅ **Research Applications** - Terminal-based security tool development
-- ✅ **Modular Architecture** - Extensible for custom research modules
-- ✅ **Complete Documentation** - Academic documentation standards
-- ✅ **Reliable Operation** - Error-free, production-ready functionality
+- **Professional Codebase** - Academic-quality code demonstrating advanced Python skills
+- **Research Applications** - Terminal-based security tool development
+- **Modular Architecture** - Extensible for custom research modules
+- **Complete Documentation** - Academic documentation standards
+- **Reliable Operation** - Error-free, production-ready functionality
 
 **Copenhagen University Integration:**
 - Cybersecurity research workflows
@@ -223,29 +223,29 @@ python launch_warp.py cli      # CLI mode
 
 ---
 
-## 🛠️ Development & Extension
+## ️ Development & Extension
 
 ### Custom Module Development
 ```python
 # modules/research_module.py
 def initialize(warp_client):
-    """Initialize custom research module"""
-    return ResearchModule(warp_client)
+ """Initialize custom research module"""
+ return ResearchModule(warp_client)
 
 class ResearchModule:
-    def __init__(self, client):
-        self.client = client
-        # Custom research functionality
+ def __init__(self, client):
+ self.client = client
+ # Custom research functionality
 ```
 
 ### Configuration Extension
 ```json
 {
-  "research": {
-    "forensics_mode": true,
-    "data_collection": "automated",
-    "output_format": "academic"
-  }
+ "research": {
+ "forensics_mode": true,
+ "data_collection": "automated",
+ "output_format": "academic"
+ }
 }
 ```
 
@@ -260,25 +260,25 @@ python warp_unified_launcher.py backup-cli
 
 ---
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
-❌ **"Module not found"**
+ **"Module not found"**
 ```bash
 # Ensure Python path is correct
 export PYTHONPATH="${PYTHONPATH}:$(pwd)/src"
 python warp_unified_launcher.py setup
 ```
 
-❌ **"GUI won't start"**
+ **"GUI won't start"**
 ```bash
 # Install PyQt5 dependencies
 pip install PyQt5
 sudo apt install python3-pyqt5
 ```
 
-❌ **"Backup failed"**
+ **"Backup failed"**
 ```bash
 # Check WARP Terminal installation
 ls ~/.config/warp-terminal/
@@ -286,7 +286,7 @@ ls ~/.config/warp-terminal/
 chmod +x warp-manager*.py
 ```
 
-❌ **"GitHub sync error"**
+ **"GitHub sync error"**
 ```bash
 # Re-setup GitHub integration
 ./warp-manager-enhanced.py --setup-github
@@ -301,79 +301,79 @@ python warp_unified_launcher.py dashboard --verbose
 
 ---
 
-## 📈 Version History
+## Version History
 
 ### v2.0.0 - Unified Ecosystem (Current)
-- ✨ Combined Mini WARP Client + Data Manager
-- 🚀 Unified launcher with multiple modes
-- 📊 Integrated dashboard and control center
-- ⚡ Automated backup-before-launch workflows
-- 🔧 Enhanced desktop integration
+- Combined Mini WARP Client + Data Manager
+- Unified launcher with multiple modes
+- Integrated dashboard and control center
+- Automated backup-before-launch workflows
+- Enhanced desktop integration
 
 ### v1.2.0 - Data Manager Enhanced
-- 💾 GitHub sync and cloud backup
+- GitHub sync and cloud backup
 - ⏰ Automated scheduling system
-- 🔄 Advanced restore operations
+- Advanced restore operations
 
-### v1.1.0 - Client Stabilization  
-- 🛡️ Event callback shutdown fix
-- 🔐 Enhanced security and token management
-- 📚 Modular architecture implementation
+### v1.1.0 - Client Stabilization
+- ️ Event callback shutdown fix
+- Enhanced security and token management
+- Modular architecture implementation
 
 ### v1.0.0 - Initial Release
-- 🚀 Basic Mini WARP Client
-- 💻 GUI and CLI modes
-- 🔌 WARP Terminal integration
+- Basic Mini WARP Client
+- GUI and CLI modes
+- WARP Terminal integration
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to the WARP ecosystem!
 
 ### Areas for Contribution
-- 🌍 Additional platform support
-- 🎨 UI/UX improvements for both tools
-- 📱 Mobile companion applications
-- 🔧 New backup formats and storage options
-- 📚 Documentation and tutorials
-- 🧪 Test coverage and quality assurance
+- Additional platform support
+- UI/UX improvements for both tools
+- Mobile companion applications
+- New backup formats and storage options
+- Documentation and tutorials
+- Test coverage and quality assurance
 
 ### Development Setup
 ```bash
-git clone https://github.com/FoundationAgents/mini-warp-client.git
+git clone https/github.com/FoundationAgents/mini-warp-client.git
 cd mini-warp-client
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python warp_unified_launcher.py setup
 ```
 
 ---
 
-## 📄 License & Credits
+## License & Credits
 
-**MIT License** - Free for personal, academic, and commercial use ✨
+**MIT License** - Free for personal, academic, and commercial use
 
 ### Credits
 - **Mini WARP Client**: Advanced terminal client development
-- **WARP Data Manager**: Professional backup solution based on [warp-data-manager](https://github.com/justkidding-scripts/warp-data-manager)
-- **Academic Context**: PhD Cybersecurity Research, Copenhagen University
-- **Community**: Built with ❤️ for the WARP Terminal community
+- **WARP Data Manager**: Professional backup solution based on [warp-data-manager](https/github.com/justkidding-scripts/warp-data-manager)
+- **Academic Context**: Cybersecurity Research, Copenhagen University
+- **Community**: Built with ️ for the WARP Terminal community
 
 ---
 
-## 🔗 Links & Resources
+## Links & Resources
 
-- 🌐 **GitHub Repository**: https://github.com/FoundationAgents/mini-warp-client
-- 📋 **Issues & Bug Reports**: https://github.com/FoundationAgents/mini-warp-client/issues
-- 💬 **Discussions**: https://github.com/FoundationAgents/mini-warp-client/discussions
-- 📦 **Releases**: https://github.com/FoundationAgents/mini-warp-client/releases
-- 📚 **WARP Terminal Docs**: https://docs.warp.dev/
+- **GitHub Repository**: https/github.com/FoundationAgents/mini-warp-client
+- **Issues & Bug Reports**: https/github.com/FoundationAgents/mini-warp-client/issues
+- **Discussions**: https/github.com/FoundationAgents/mini-warp-client/discussions
+- **Releases**: https/github.com/FoundationAgents/mini-warp-client/releases
+- **WARP Terminal Docs**: https/docs.warp.dev/
 
 ---
 
-## 🎉 Quick Start Checklist
+## Quick Start Checklist
 
 - [ ] Clone repository
 - [ ] Run ecosystem setup: `python warp_unified_launcher.py setup`
@@ -382,10 +382,10 @@ python warp_unified_launcher.py setup
 - [ ] Launch client: Select option 1 in dashboard
 - [ ] Setup GitHub sync (optional): `./warp-manager-enhanced.py --setup-github`
 - [ ] Schedule automation (optional): `./warp-manager-enhanced.py --schedule daily`
-- [ ] Bookmark this README for reference! 📖
+- [ ] Bookmark this README for reference!
 
 ---
 
-⚡ **Fast** • 🔒 **Secure** • 🎯 **Reliable** • 🌍 **Cross-Platform** • 🎓 **Research-Ready**
+ **Fast** • **Secure** • **Reliable** • **Cross-Platform** • **Research-Ready**
 
-**Built with ❤️ for cybersecurity researchers, terminal power users, and the WARP community**
+**Built with ️ for cybersecurity researchers, terminal power users, and the WARP community**

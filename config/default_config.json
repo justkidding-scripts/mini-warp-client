@@ -1,51 +1,51 @@
 {
-  "warp_client": {
-    "name": "Mini WARP Client",
-    "version": "1.0.0",
-    "debug_mode": false,
-    "auto_connect": true,
-    "max_retries": 3,
-    "timeout": 30
-  },
-  "ui": {
-    "theme": "dark",
-    "window_size": [900, 600],
-    "show_notifications": true,
-    "auto_save": true,
-    "font_size": 12
-  },
-  "logging": {
-    "level": "INFO",
-    "file": "warp_client.log",
-    "max_size_mb": 10,
-    "backup_count": 5,
-    "console_output": true
-  },
-  "authentication": {
-    "token_file": "./data/tokens.json",
-    "auto_refresh": true,
-    "remember_tokens": true
-  },
-  "endpoints": {
-    "api_base": "https://api.warp.dev/v1",
-    "websocket_base": "wss://ws.warp.dev/v1",
-    "auth_endpoint": "https://api.warp.dev/v1/auth",
-    "status_endpoint": "https://api.warp.dev/v1/status"
-  },
-  "features": {
-    "websocket_enabled": true,
-    "auto_reconnect": true,
-    "command_history": true,
-    "session_persistence": true,
-    "custom_modules": {
-      "enabled": false,
-      "modules_directory": "./modules"
-    }
-  },
-  "performance": {
-    "request_timeout": 30,
-    "max_concurrent_requests": 10,
-    "cache_enabled": true,
-    "cache_ttl": 300
-  }
+ "warp_client": {
+ "name": "Mini WARP Client",
+ "version": "1.0.0",
+ "debug_mode": false,
+ "auto_connect": true,
+ "max_retries": 3,
+ "timeout": 30
+ },
+ "ui": {
+ "theme": "dark",
+ "window_size": [900, 600],
+ "show_notifications": true,
+ "auto_save": true,
+ "font_size": 12
+ },
+ "logging": {
+ "level": "INFO",
+ "file": "warp_client.log",
+ "max_size_mb": 10,
+ "backup_count": 5,
+ "console_output": true
+ },
+ "authentication": {
+ "token_file": "./data/tokens.json",
+ "auto_refresh": true,
+ "remember_tokens": true
+ },
+ "endpoints": {
+ "api_base": "https/api.warp.dev/v1",
+ "websocket_base": "wss/ws.warp.dev/v1",
+ "auth_endpoint": "https/api.warp.dev/v1/auth",
+ "status_endpoint": "https/api.warp.dev/v1/status"
+ },
+ "features": {
+ "websocket_enabled": true,
+ "auto_reconnect": true,
+ "command_history": true,
+ "session_persistence": true,
+ "custom_modules": {
+ "enabled": false,
+ "modules_directory": "./modules"
+ }
+ },
+ "performance": {
+ "request_timeout": 30,
+ "max_concurrent_requests": 10,
+ "cache_enabled": true,
+ "cache_ttl": 300
+ }
 }
